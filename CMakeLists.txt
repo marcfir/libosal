@@ -151,7 +151,7 @@ target_include_directories(osal
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>  
         $<INSTALL_INTERFACE:include>)
-set_property(TARGET osal PROPERTY POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS})
+set_property(TARGET osal PROPERTY POSITION_INDEPENDENT_CODE Yes)
 
 
 write_basic_package_version_file(
